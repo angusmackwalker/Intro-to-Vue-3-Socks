@@ -6,7 +6,8 @@ const app = Vue.createApp({
             blueSox: './assets/images/socks_blue.jpg',
             goo:'https://www.google.com',
             inStock:true,
-            inventory: 9
+            inventory: 9,
+            onSale:true
         }
     }
 })
