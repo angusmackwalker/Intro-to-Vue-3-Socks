@@ -22,9 +22,22 @@
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
           </div>
+          <div id="list">
+            <ul>
+              <li v-for="detail in details">{{detail}}</li>
+            </ul>
+            <div v-for="variant in variants" v-bind:key="variant.id">{{variant.color}}</div>
+            <ul>
+              <li v-for="size in sizes">{{size}}</li>
+            </ul>
+          </div>
+          
         </div>
       </div>
     </div>
+
+    <!-- Import Vue-->
+    <script src="https://unpkg.com/vue@3"></script>
 
     <!-- Import App -->
     <script src="./main.js"></script>
