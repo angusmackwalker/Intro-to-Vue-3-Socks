@@ -5,7 +5,8 @@ const app = Vue.createApp({
             imagePath: './assets/images/socks_green.jpg',
             blueSox: './assets/images/socks_blue.jpg',
             goo:'https://www.google.com',
-            inStock:true
+            inStock:true,
+            inventory: 9
         }
     }
 })
