@@ -15,10 +15,16 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <img v-bind:src="image">
+            <!--Google Link-->
+            <a v-bind:href="goo">Google</a>
+            <!-- image goes here -->
+            <img v-bind:src="imagePath">green sox</img>
+            <img v-bind:src="blueSox">blue sox</img>
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <p v-if="inStock">In Stock</p>
+            <p v-else>Out of Stock</p>
           </div>
         </div>
       </div>
